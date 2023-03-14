@@ -19,8 +19,13 @@ img{
     align-items: center;
 }
 
+ul{
+    list-style: none;
+}
+
+
+/* carousel------------------------------------------------------------------------------- */
 .carousel{
-    border: 1px solid black;
     width: 80%;
     height: 550px;
     display: flex;
@@ -29,29 +34,27 @@ img{
 .carousel-main{
     width: 80%;
     height: 100%;
-    border: 1px solid red;
     object-fit: contain;
     background-color: black;
 }
 
-.carousel-main img{
-    object-fit: contain;
-}
-
-.carousel-main img{
+.slide{
     display: none;
+    object-fit: contain;
 }
 
 .carousel-preview{
     height: 100%;
     width: 20%;
-    border: 1px solid green;
     position: relative;
 }
 
 .img-container{
    height: calc(100% / 5);
    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    
 }
 
@@ -66,14 +69,16 @@ img{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* aactive funcionality */
+/* active funcionality */
 div.active>div{
     background-color: transparent;
+    border: 2px solid #fff;
 }
 
-img.active{
+.active{
     display: block;
 }
+
 
 /* buttons */
 .btn{
