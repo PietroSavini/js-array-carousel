@@ -54,10 +54,10 @@ prevBtn.addEventListener("click", function() {
     sliderElement[active].classList.remove("active");
     thumbnailElement[active].classList.remove("active");
 
-    if (active < images.length +1 && active >= 0) {
+    if (active > 0) {
         active-- ;
-    } else{
-        active = images.length;
+    }else{
+        active = images.length -1;
     }
     sliderElement[active].classList.add("active")
     thumbnailElement[active].classList.add("active")
